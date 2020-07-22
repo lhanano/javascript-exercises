@@ -15,12 +15,19 @@ function multiply (array) {
 	return result;
 }
 
-function power() {
-	
+function power(a, b) {
+	return a**b;
 }
 
-function factorial() {
-	
+function factorial(num) {
+	let i = num;
+	let total = num;
+	while (i>1) {
+		i--;
+		total *= i;
+	}
+	if (num === 0) {return 1};
+	return total;
 }
 
 module.exports = {
